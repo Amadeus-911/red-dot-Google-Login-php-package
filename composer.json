@@ -1,0 +1,17 @@
+{
+    "name": "red-dot/google-oauth-login-php",
+    "description": "This a simple package for php for authenticating user from Google using the OAuth 2.0",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RedDot\\GoogleOauthLoginPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Amadeus-911",
+            "email": "iftikharimrul@iut-dhaka.edu"
+        }
+    ],
+    "require": {}
+}
