@@ -1,0 +1,11 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Amadeus-911/red-dot-Google-Sign-In-php.git"
+        }
+    ],
+    "require": {
+        "red-dot/google-oauth-login-php": "dev-main"
+    }
+}
