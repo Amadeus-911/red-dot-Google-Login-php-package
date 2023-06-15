@@ -30,7 +30,7 @@ In your composer.json file add
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/Amadeus-911/red-dot-Google-Sign-In-php.git"
+            "url": "https://github.com/Amadeus-911/red-dot-Google-Login-php-package.git"
         }
     ],
     "require": {
