@@ -53,21 +53,23 @@ composer install
 
 # Setup in your project
 
+- refer to the sample/login.php
+
 import it in your php file 
 ```
 require_once 'vendor/autoload.php';
 use RedDot\GoogleOauthLoginPhp\GoogleClient;
 ```
 
-First generate authUrl where the login button will hit
+First create the GoogleClient with your google app client_id and client_secret
+then generate authUrl where the login button will hit
 
 ```
-$client = new GoogleClient($client_id, $client_secret, $redirect_uri, $scope);
+$client = new GoogleClient($client_id, $client_secret, $redirect_uri);
 $authUrl = $client->buildAuthUrl();
 ```
 
-add it to your google sign in button 
-
+add it to your google sign in button like this
 ```
  <a style="text-decoration:none" href="<?php echo $authUrl?>">
                         <button class="google-button">
@@ -86,6 +88,4 @@ retrive user data using the access token
 ```
  $user = $client->getUserInfo($accessToken);
 ```
-
-
 There is a sample project given for your reference. Use your applications CLIENT_ID, CLIENT_SECRET, REDIRECT_URI in place of the placeholders
