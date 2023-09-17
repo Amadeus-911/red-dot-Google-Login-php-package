@@ -14,11 +14,11 @@ class GoogleClient
     private $apiUrl = 'https://accounts.google.com/o/oauth2/v2/auth';
     private $tokenUrl = 'https://accounts.google.com/o/oauth2/token';
     private $userInfoUrl = 'https://www.googleapis.com/oauth2/v3/userinfo';
+    private $scope = 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email';
 
-    public function __construct($client_id, $client_secret, $redirect_uri, $scope) {
+    public function __construct($client_id, $client_secret, $redirect_uri) {
         $this->client_id = $client_id;
         $this->redirect_uri = $redirect_uri;
-        $this->scope = $scope;
         $this->client_secret = $client_secret;
     }
 
