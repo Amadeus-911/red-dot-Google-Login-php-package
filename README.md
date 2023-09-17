@@ -22,7 +22,13 @@ Download the config JSON file containing client ID and Client Secret
 
 Install composer (php package manager) from here https://getcomposer.org/download/
 
-# Set up in your project
+# Setup using composer 
+```
+composer require red-dott/google-oauth-login-php:dev-main
+```
+
+
+# Set up in your project with github
 In your composer.json file add 
 
 ```
