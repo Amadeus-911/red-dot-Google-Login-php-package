@@ -34,7 +34,7 @@ In your composer.json file add
         }
     ],
     "require": {
-        "red-dot/google-oauth-login-php": "dev-main"
+        "red-dott/google-oauth-login-php": "dev-main"
     }
 }
 
