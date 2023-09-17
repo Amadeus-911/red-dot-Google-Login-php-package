@@ -1,1 +1,6 @@
+{
+    "require": {
+        "red-dott/google-oauth-login-php": "dev-main"
+    }
+}
 
