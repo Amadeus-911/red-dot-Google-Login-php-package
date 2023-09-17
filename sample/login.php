@@ -9,11 +9,12 @@ use RedDot\GoogleOauthLoginPhp\GoogleClient;
   // Set the parameter values
   $client_id = 'YOUR_GOOGLE_CLIENT_ID';
   $redirect_uri = 'YOUR_REDIRECT_URI';
-  $scope = 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email';
   $client_secret = 'YOUR_CLIENT_SECRET';
 
-$client = new GoogleClient($client_id, $client_secret, $redirect_uri, $scope);
+$client = new GoogleClient($client_id, $client_secret, $redirect_uri);
 $authUrl = $client->buildAuthUrl();
+
+$homePage = './index.php';
 
 if (isset($_GET['code'])) {
     $code = $_GET['code'];
@@ -25,7 +26,7 @@ if (isset($_GET['code'])) {
     $_SESSION['email'] = $user[1];
     $_SESSION['imgUrl'] = $user[2];
     $_SESSION['access_token'] = $accessToken;
-    header('location:./index.php');
+    header('location:' . $homePage);
 
 }
 
