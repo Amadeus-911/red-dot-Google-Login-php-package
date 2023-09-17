@@ -7,7 +7,6 @@ class GoogleClient
     private $client_id;
     private $client_secret;
     private $redirect_uri;
-    private $scope;
     private $response_type = 'code';
     private $grant_type = 'authorization_code';
 
