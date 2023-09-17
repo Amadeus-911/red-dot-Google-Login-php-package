@@ -51,6 +51,8 @@ on root folder of you project run
 composer install
 ```
 
+# Setup in your project
+
 import it in your php file 
 ```
 require_once 'vendor/autoload.php';
